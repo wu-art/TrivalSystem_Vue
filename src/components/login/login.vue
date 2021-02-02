@@ -31,7 +31,7 @@ export default {
         //找到距离异步操作有结果的代码最近的方法，前面加async
          async handleLogin() {
             const res = await this.$http.post('login', this.formdata).then(res => {
-                // console.log(res)
+                console.log(res)
                 const {
                     data,
                     meta: { msg, status }
@@ -39,6 +39,9 @@ export default {
 
                 if (status == 200) {
                     // 登录成功
+                    //1.保存token
+                    //用户没登录，通过url直接到home，登录成功时,保存正确的token;
+                    localStorage.setItem('token',data.token)
                     // 跳转home
                     // js编程式导航
                     this.$router.push({ name: 'home' })

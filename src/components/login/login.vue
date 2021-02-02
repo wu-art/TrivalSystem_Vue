@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    data() {
+    data () {
         return {
             formdata: {
                 username: '',
@@ -27,7 +27,23 @@ export default {
         // 登录请求
         handleLogin() {
             this.$http.post('login', this.formdata).then(res => {
-                console.log(res)
+                // console.log(res)
+                const {
+                    data,meta:{msg,status}
+                } = res.data
+              
+                if (status == 200){
+                // 登录成功
+                // 跳转home
+                    // this.$router.push({name:'home'})
+                    // 提示成功
+                    this.$message.success(msg);
+                }
+                else{
+                // 不成功
+                // 提示消息
+                   this.$message.warning(msg)  
+                }
             })
         }
     }

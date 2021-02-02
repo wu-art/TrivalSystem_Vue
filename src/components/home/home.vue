@@ -19,9 +19,7 @@
         <el-aside class="aside" width="200px">
             <!-- 侧边导航栏 -->
             <!-- true首字母为大写无用 -->
-            <el-menu
-            :unique-opened="true"
-            >
+            <el-menu :unique-opened="true">
                 <el-submenu index="1">
                     <!-- index的值不能一样 -->
                     <template slot="title">
@@ -98,6 +96,16 @@
 
 <script>
 export default {
+    // newVue之前自动触发(若没有登录过，就无法进入home组件)
+    beforeCreate(){
+        // 获取token
+        const token = localStorage.getItem('token')
+        if (!token){
+            // 没有token，跳转到登录页面
+            this.$router.push({name:'login'})
+        }
+        // if token 有 -> 继续渲染组件
+    }
 
 }
 </script>

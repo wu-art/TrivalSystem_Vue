@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    data () {
+    data() {
         return {
             formdata: {
                 username: '',
@@ -25,29 +25,56 @@ export default {
     },
     methods: {
         // 登录请求
-        handleLogin() {
-            this.$http.post('login', this.formdata).then(res => {
+        //简化登录请求代码
+        //让异步代码看起来像同步代码(一步一步执行)
+        //找到异步操作有结果的代码，前面加await，同时接口异步操作的结果res
+        //找到距离异步操作有结果的代码最近的方法，前面加async
+         async handleLogin() {
+            const res = await this.$http.post('login', this.formdata).then(res => {
                 // console.log(res)
                 const {
-                    data,meta:{msg,status}
+                    data,
+                    meta: { msg, status }
                 } = res.data
-              
-                if (status == 200){
-                // 登录成功
-                // 跳转home
-                // js编程式导航
-                    this.$router.push({name:'home'})
-                    
+
+                if (status == 200) {
+                    // 登录成功
+                    // 跳转home
+                    // js编程式导航
+                    this.$router.push({ name: 'home' })
+
                     // 提示成功
                     this.$message.success(msg);
-                }
-                else{
-                // 不成功
-                // 提示消息
-                    this.$message.warning(msg)  
+                } else {
+                    // 不成功
+                    // 提示消息
+                    this.$message.warning(msg)
                 }
             })
         }
+
+        //     this.$http.post('login', this.formdata).then(res => {
+        //         // console.log(res)
+        //         const {
+        //             data,meta:{msg,status}
+        //         } = res.data
+
+        //         if (status == 200){
+        //         // 登录成功
+        //         // 跳转home
+        //         // js编程式导航
+        //             this.$router.push({name:'home'})
+
+        //             // 提示成功
+        //             this.$message.success(msg);
+        //         }
+        //         else{
+        //         // 不成功
+        //         // 提示消息
+        //             this.$message.warning(msg)  
+        //         }
+        //     })
+        // }
     }
 }
 </script>

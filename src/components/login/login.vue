@@ -35,14 +35,16 @@ export default {
                 if (status == 200){
                 // 登录成功
                 // 跳转home
-                    // this.$router.push({name:'home'})
+                // js编程式导航
+                    this.$router.push({name:'home'})
+                    
                     // 提示成功
                     this.$message.success(msg);
                 }
                 else{
                 // 不成功
                 // 提示消息
-                   this.$message.warning(msg)  
+                    this.$message.warning(msg)  
                 }
             })
         }

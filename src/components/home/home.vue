@@ -58,7 +58,6 @@
                         <span>商品管理</span>
                     </template>
                     <el-menu-item index="1-1">
-                        <!-- <template slot="title">分组一</template> -->
                         <i class="el-icon-location"></i>
                         <span>23</span>
                     </el-menu-item>
@@ -70,7 +69,6 @@
                         <span>数据统计</span>
                     </template>
                     <el-menu-item index="1-1">
-                        <!-- <template slot="title">分组一</template> -->
                         <i class="el-icon-location"></i>
                         <span>选项一</span>
                     </el-menu-item>
@@ -82,7 +80,6 @@
                         <span>数据统计</span>
                     </template>
                     <el-menu-item index="1-1">
-                        <!-- <template slot="title">分组一</template> -->
                         <i class="el-icon-location"></i>
                         <span>选项一</span>
                     </el-menu-item>

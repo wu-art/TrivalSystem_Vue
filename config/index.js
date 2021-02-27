@@ -5,13 +5,6 @@
 const path = require('path')
 
 module.exports = {
-  // proxyTable: {
-  //   '/users/': {
-  //     target:'http://127.0.0.1:8099',
-  //     changeOrigin:true
-  //   }
-  // },
-
   dev: {
 
     // Paths

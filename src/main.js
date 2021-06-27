@@ -3,26 +3,20 @@
 import Vue from 'vue'
 import App from './App'
 import ElementUI from 'element-ui'
-import MyHttpServer from '@/plugins/http.js'
+import './plugins/axios'
 // axios插件使用:
 // import axios from 'axios'
 // Vue.prototype.$http = axios
-
-// import vueRsource from 'vue-resource'
-// post请求处理
 import moment from 'moment'
-
 import 'element-ui/lib/theme-chalk/index.css'
 import router from './router'
 import '@/assets/css/reset.css'
-
 import echarts from 'echarts' 
+import scroll from 'vue-seamless-scroll'
+Vue.use(scroll)
 
-// 使用vue插件
 Vue.use(ElementUI)
-Vue.use(MyHttpServer)
-// Vue.use(vueRsource);
-// Vue.http.options.root = 'https://www.liulongbin.top:8888/api/private/v1/'
+// Vue.use(axios)
 
 Vue.config.productionTip = false
 

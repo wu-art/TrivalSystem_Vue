@@ -1,0 +1,109 @@
+#index {
+    color: #d3d6dd;
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+  
+    .bg {
+      padding: 12.8px 12.8px 12.8px 12.8px;
+      background-image: url("../../assets/images/pageBg.png");
+      background-size: cover;
+      background-position: center center;
+    }
+  
+    .host-body {
+      .title {
+        position: relative;
+        width: 400px;
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+  
+        .title-text {
+          font-size: 20px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%);
+        }
+  
+        .title-bototm {
+          position: absolute;
+          bottom: -45px;
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+  
+      // 平行四边形
+      .react-left {
+        cursor: pointer;
+        font-size: 14.4px;
+        width: 240px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        transform: skewX(-45deg);
+  
+        .react-after {
+          position: absolute;
+          right: -20px;
+          top: 0;
+          height: 40px;
+          width: 40px;
+          background-color: #0f1325;
+          transform: skewX(45deg);
+        }
+  
+        .text {
+          display: inline-block;
+          transform: skewX(45deg);
+        }
+      }
+  
+      .react-right {
+        cursor: pointer;
+        font-size: 14.4px;
+        width: 240px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        transform: skewX(45deg);
+  
+        .react-before {
+          position: absolute;
+          left: -20px;
+          top: 0;
+          height: 40px;
+          width: 40px;
+          background-color: #0f1325;
+          transform: skewX(-45deg);
+        }
+  
+        .text {
+          display: inline-block;
+          transform: skewX(-45deg);
+        }
+      }
+  
+      .body-box {
+        margin-top: 12.8px;
+        display: flex;
+        flex-direction: column;
+  
+        //下方区域的布局
+        .content-box {
+          display: grid;
+          grid-template-columns: 2.5fr 5fr 2.5fr;
+        }
+  
+        // 底部数据
+        .bototm-box {
+          margin-top: 8px;
+          display: grid;
+          grid-template-columns: 7fr 3fr;
+        }
+      }
+    }
+  }
+  

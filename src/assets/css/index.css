@@ -1,0 +1,283 @@
+.main{
+    width: 100%;
+    height: 120%;
+    background: url("../images/bj.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 83px;
+}
+/*头部左边*/
+.header .header-left{
+    float: left;
+    width: 28%;
+    height: 83px;
+    color: #ffffff;
+    /* text-align: center; */
+    line-height: 83px;
+    padding-left: 25px;
+    font-size: 15px;
+    /*border: 1px solid gold;*/
+}
+/*头部中间*/
+.header .header-cen{
+    float: left;
+    width: 40%;
+    height: 83px;
+    background: url("../images/b.png") no-repeat center top;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 83px;
+}
+.header .header-cen h1{
+    color: #ffffff;
+    letter-spacing:0.2rem;
+    text-shadow: 0 0 .3rem #00d8ff;
+    line-height: 37px;
+}
+/*头部右边*/
+.header .header-right{
+    float: right;
+    width: 28%;
+    height: 83px;
+    text-align: right;
+}
+.header-right .el-button{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+/*中间左边*/
+.content-left{
+    width: 25%;
+    height: 460px;
+    padding: 1px;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.content-left .left-top{
+    width: 100%;
+    height: 3.2rem;
+    /*border: 1px solid gold;*/
+    margin-bottom: .2rem;
+}
+.title{
+    width: 100%;
+    height: .4rem;
+    /*border: 1px solid red;*/
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: .3rem;
+    line-height: .4rem;
+    background: url("../images/ksh33.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.title span{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    top: -1.1rem;
+}
+.list p{
+    color: #029698;
+    font-size: 13px;
+    padding-left: 20px;
+}
+.list ul{
+    list-style-type: none;
+}
+.list li{
+    float: left;
+    font-size: 13px;
+    color: #ffffff;
+    width: 50%;
+    height: 30px;
+    line-height: 10px;
+}
+
+.left-center{
+    width: 100%;
+    height: 3.2rem;
+    /*border: 1px solid gold;*/
+    margin-top: 200px;
+    margin-bottom: .2rem;
+    /* background-color: tomato; */
+}
+
+.allnav{
+    width: 100%;
+    height: 300px;
+    margin-top: 25px;
+    /* background-color: teal; */
+}
+
+.center-top{
+    width: 48%;
+    height: 600px;
+    float: left;
+    background: url('../images/a.png') no-repeat;
+    background-size:contain;
+    box-sizing: border-box;
+}
+.center-top .top-title{
+    position: absolute;
+    width: 30%;
+    height: 100px;
+    left: 380px;
+    top:70px;
+}
+.center-top .top-title ul{
+    list-style-type: none;
+}
+.center-top .top-title li{
+    float: left;
+    width: 50%;
+    height: 1rem;
+    /*border: 1px solid green;*/
+}
+.center-top .top-title li p,
+.center-top .top-title li span,
+.center-top .top-title li b{
+    color: #ffffff;
+}
+.center-top .top-title li p{
+    padding: .1rem;
+}
+.center-top .top-title li span{
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background: #55bcd4;
+    line-height: 40px;
+    font-size: .3rem;
+    margin-top: -5px;
+}
+.center-top .top-bottom{
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    top: 180px;
+    margin-left: 15px;
+}
+.center-top .p1{
+    position: absolute;
+    top: 600px;
+    color: white;
+    font-family: "楷体";
+    animation: mymove 30s infinite;
+    white-space: nowrap;
+
+}
+@keyframes mymove {
+    from {
+        left: 70%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+/*中间右边*/
+.content-right{
+    width: 24%;
+    float: right;
+}
+.content-right .right-top{
+    border: 1px solid #55bcd4;
+    margin-left: -40px;
+}
+.right-top h3{
+    position: absolute;
+    top: -22px;
+    left: 7px;
+    color: white;
+}
+.right-top ul{
+    list-style-type: none;
+}
+.right-top li{
+    width: 50%;
+    padding-top: 20px;
+    color: #029698;
+    float: left;
+    font-size:13px;
+}
+
+.right-center{
+    width: 24%;
+    float: left;
+    margin-bottom: .2rem;
+}
+.gun{
+    margin-left: 50px;
+}
+.gun span{
+    display: block;
+    float: left;
+    height: .2rem;
+    width: 30%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #61d2f7;
+    text-align: center;
+    margin-bottom: .1rem;   
+}
+#FontScroll{
+    width: 380px;
+    height: 300px;
+    clear: both;
+    overflow: auto;
+    position: absolute; 
+    top: 370px;
+}
+
+#FontScroll ul li{
+    width: 300px;
+    height: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 5px;
+    overflow: hidden;
+    font-size: 13px;
+    border-bottom: 1px dashed #404040;
+}
+#FontScroll ul li:nth-child(1){
+    /*background-color: #072951;*/
+    box-shadow: -10px 0px 15px #034c6a inset, /*左边阴影*/
+    10px 0px 15px #034c6a inset;
+
+}
+#FontScroll ul li:hover{
+    box-shadow: -10px 0px 15px #034c6a inset, /*左边阴影*/
+    10px 0px 15px #034c6a inset;
+    cursor: pointer;
+}
+
+.fontInner span{
+    display:inline-block;
+    width:30%;
+    color: #ffffff;
+}
+.fontInner span b{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    /*border-radius: 0.03rem;*/
+    color: #ffffff;
+    line-height: 20px;
+    font-size: .1rem;
+}
+
+#FontScroll ul li:nth-child(1) .fontInner span b{ background: #FE4365 }
+#FontScroll ul li:nth-child(2) .fontInner span b{ background: #3FB8AF }
+#FontScroll ul li:nth-child(3) .fontInner span b{ background: #83AF9B }
+#FontScroll ul li .fontInner span b{ background: #C8C8A9 }
+
